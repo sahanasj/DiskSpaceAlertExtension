@@ -1,0 +1,23 @@
+<monitor>
+    <name>Disk Space Monitor</name>
+    <type>managed</type>
+    <description>Send Custom Events to the Controller if available disk space crosses a threshold for warning or critical. Does not produce any metrics.</description>
+    <monitor-configuration>
+    </monitor-configuration>
+    <monitor-run-task>
+        <execution-style>periodic</execution-style>
+        <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+        <name>Run</name>
+        <type>executable</type>
+        <task-arguments>
+        </task-arguments>
+        <executable-task>
+            <type>file</type>
+            <file os-type="linux">check_disk.sh</file>
+            <!--
+            We'll eventually want this for Windows too.
+            <file os-type="windows">disk_space.bat</file>
+            -->
+        </executable-task>
+    </monitor-run-task>
+</monitor>

@@ -1,0 +1,1413 @@
+{
+  "controllerUrl" : "http://controller:8090",
+  "applicationId" : 7,
+  "tierId" : null,
+  "user" : "admin",
+  "createdDate" : [ "java.util.Date", 1439503417974 ],
+  "entityType" : "policies",
+  "entities" : [ "java.util.ArrayList", [ [ "com.singularity.ee.controller.api.dto.EventReactor", {
+    "id" : 1,
+    "version" : 6,
+    "name" : "Disk Space Used Error",
+    "applicationId" : 7,
+    "eventFilter" : [ "com.singularity.ee.controller.api.dto.EventStreamItemFilter", {
+      "id" : 1,
+      "version" : 6,
+      "policyIds" : [ ],
+      "eventTypeWrappers" : [ "[Lcom.singularity.ee.controller.api.dto.EventNotificationTypeWrapper;", [ [ "com.singularity.ee.controller.api.dto.EventNotificationTypeWrapper", {
+        "id" : 10,
+        "version" : 0,
+        "eventType" : "CUSTOM",
+        "subType" : [ ],
+        "customFilters" : [ "[Lcom.singularity.ee.controller.api.dto.CustomEventFilter;", [ [ "com.singularity.ee.controller.api.dto.CustomEventFilter", {
+          "id" : 11,
+          "version" : 6,
+          "customEventType" : "DiskSpace",
+          "propertyBooleanOperator" : "AND",
+          "properties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValueOperator;", [ [ "com.singularity.ee.controller.api.dto.NameValueOperator", {
+            "id" : 0,
+            "version" : 0,
+            "name" : "level",
+            "value" : "ERROR",
+            "type" : "EQ"
+          } ] ] ]
+        } ] ] ]
+      } ] ] ],
+      "requestExperiences" : [ ],
+      "customEventFilters" : [ "[Lcom.singularity.ee.controller.api.dto.CustomEventFilter;", [ [ "com.singularity.ee.controller.api.dto.CustomEventFilter", {
+        "id" : 11,
+        "version" : 6,
+        "customEventType" : "DiskSpace",
+        "propertyBooleanOperator" : "AND",
+        "properties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValueOperator;", [ [ "com.singularity.ee.controller.api.dto.NameValueOperator", {
+          "id" : 0,
+          "version" : 0,
+          "name" : "level",
+          "value" : "ERROR",
+          "type" : "EQ"
+        } ] ] ]
+      } ] ] ],
+      "applicationIds" : [ ],
+      "businessTransactionIds" : [ ],
+      "applicationComponentIds" : [ ],
+      "applicationComponentNodeIds" : [ ],
+      "missingEntities" : [ "[Lcom.singularity.ee.controller.api.dto.customdashboard.EntityUniqueIdentifier;", [ ] ],
+      "timeRange" : null,
+      "filterProperties" : null,
+      "policyViolationStartedWarning" : false,
+      "policyViolationStartedCritical" : false,
+      "policyViolationWarningToCritical" : false,
+      "policyViolationCriticalToWarning" : false,
+      "policyViolationContinuesCritical" : false,
+      "policyViolationContinuesWarning" : false,
+      "policyViolationEndedCritical" : false,
+      "policyViolationEndedWarning" : false,
+      "policyViolationCanceledCritical" : false,
+      "policyViolationCanceledWarning" : false,
+      "slowRequest" : false,
+      "verySlowRequest" : false,
+      "stalledRequest" : false,
+      "allError" : false,
+      "clrCrash" : false,
+      "codeDeadlock" : false,
+      "resourcePoolLimit" : false,
+      "applicationDeployment" : false,
+      "appServerRestart" : false,
+      "appConfigChange" : false,
+      "applicationCrash" : false,
+      "license" : false,
+      "controllerDiskSpaceLow" : false,
+      "agentVersionNewerThanController" : false,
+      "agentConfigurationError" : false,
+      "agentEnabledDisabled" : false,
+      "bytecodeTransformerLog" : false,
+      "diagnosticSession" : false,
+      "internalUIEvent" : false,
+      "agentEvent" : false,
+      "appDynamicsInternalDiagnostics" : false,
+      "eumInternalError" : false,
+      "memoryLeakDiagnostics" : false,
+      "systemLog" : false,
+      "activityTrace" : false,
+      "objectContentSummary" : false,
+      "appDynamicsData" : false,
+      "azureAutoScaling" : false,
+      "agentDiagnostics" : false,
+      "memory" : false,
+      "custom" : true,
+      "applicationDiscovered" : false,
+      "tierDiscovered" : false,
+      "nodeDiscovered" : false,
+      "machineDiscovered" : false,
+      "btDiscovered" : false,
+      "serviceEndpointDiscovered" : false,
+      "backendDiscovered" : false,
+      "warRoomNote" : false,
+      "syntheticBrowserEvent" : false,
+      "syntheticAvailabilityHealthy" : false,
+      "syntheticAvailabilityWarning" : false,
+      "syntheticAvailabilityConfirmedWarning" : false,
+      "syntheticAvailabilityOngoingWarning" : false,
+      "syntheticAvailabilityError" : false,
+      "syntheticAvailabilityConfirmedError" : false,
+      "syntheticAvailabilityOngoingError" : false,
+      "maxRows" : 0,
+      "errorIDs" : null,
+      "needProps" : false,
+      "firstInChain" : false,
+      "fetchAllEventTypes" : false,
+      "guid" : null
+    } ],
+    "entityFilters" : [ "[Lcom.singularity.ee.controller.api.dto.policies.APolicyAffectedEntityMatchCriteria;", [ ] ],
+    "enabled" : true,
+    "batchActionsPerMinute" : true,
+    "actionWrappers" : [ "[Lcom.singularity.ee.controller.api.dto.ActionExecutionWrapper;", [ [ "com.singularity.ee.controller.api.dto.ActionExecutionWrapper", {
+      "id" : 1,
+      "version" : 1,
+      "actionId" : 1,
+      "type" : null,
+      "value" : 0,
+      "notes" : "",
+      "entityDefinitions" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ]
+    } ] ] ],
+    "type" : "IMMEDIATE",
+    "durationInMins" : 1
+  } ], [ "com.singularity.ee.controller.api.dto.EventReactor", {
+    "id" : 3,
+    "version" : 1,
+    "name" : "Disk Space Used Warn",
+    "applicationId" : 7,
+    "eventFilter" : [ "com.singularity.ee.controller.api.dto.EventStreamItemFilter", {
+      "id" : 3,
+      "version" : 5,
+      "policyIds" : [ ],
+      "eventTypeWrappers" : [ "[Lcom.singularity.ee.controller.api.dto.EventNotificationTypeWrapper;", [ [ "com.singularity.ee.controller.api.dto.EventNotificationTypeWrapper", {
+        "id" : 9,
+        "version" : 0,
+        "eventType" : "CUSTOM",
+        "subType" : [ ],
+        "customFilters" : [ "[Lcom.singularity.ee.controller.api.dto.CustomEventFilter;", [ [ "com.singularity.ee.controller.api.dto.CustomEventFilter", {
+          "id" : 10,
+          "version" : 5,
+          "customEventType" : "DiskSpace",
+          "propertyBooleanOperator" : "AND",
+          "properties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValueOperator;", [ [ "com.singularity.ee.controller.api.dto.NameValueOperator", {
+            "id" : 0,
+            "version" : 0,
+            "name" : "level",
+            "value" : "WARN",
+            "type" : "EQ"
+          } ] ] ]
+        } ] ] ]
+      } ] ] ],
+      "requestExperiences" : [ ],
+      "customEventFilters" : [ "[Lcom.singularity.ee.controller.api.dto.CustomEventFilter;", [ [ "com.singularity.ee.controller.api.dto.CustomEventFilter", {
+        "id" : 10,
+        "version" : 5,
+        "customEventType" : "DiskSpace",
+        "propertyBooleanOperator" : "AND",
+        "properties" : [ "[Lcom.singularity.ee.controller.api.dto.NameValueOperator;", [ [ "com.singularity.ee.controller.api.dto.NameValueOperator", {
+          "id" : 0,
+          "version" : 0,
+          "name" : "level",
+          "value" : "WARN",
+          "type" : "EQ"
+        } ] ] ]
+      } ] ] ],
+      "applicationIds" : [ ],
+      "businessTransactionIds" : [ ],
+      "applicationComponentIds" : [ ],
+      "applicationComponentNodeIds" : [ ],
+      "missingEntities" : [ "[Lcom.singularity.ee.controller.api.dto.customdashboard.EntityUniqueIdentifier;", [ ] ],
+      "timeRange" : null,
+      "filterProperties" : null,
+      "policyViolationStartedWarning" : false,
+      "policyViolationStartedCritical" : false,
+      "policyViolationWarningToCritical" : false,
+      "policyViolationCriticalToWarning" : false,
+      "policyViolationContinuesCritical" : false,
+      "policyViolationContinuesWarning" : false,
+      "policyViolationEndedCritical" : false,
+      "policyViolationEndedWarning" : false,
+      "policyViolationCanceledCritical" : false,
+      "policyViolationCanceledWarning" : false,
+      "slowRequest" : false,
+      "verySlowRequest" : false,
+      "stalledRequest" : false,
+      "allError" : false,
+      "clrCrash" : false,
+      "codeDeadlock" : false,
+      "resourcePoolLimit" : false,
+      "applicationDeployment" : false,
+      "appServerRestart" : false,
+      "appConfigChange" : false,
+      "applicationCrash" : false,
+      "license" : false,
+      "controllerDiskSpaceLow" : false,
+      "agentVersionNewerThanController" : false,
+      "agentConfigurationError" : false,
+      "agentEnabledDisabled" : false,
+      "bytecodeTransformerLog" : false,
+      "diagnosticSession" : false,
+      "internalUIEvent" : false,
+      "agentEvent" : false,
+      "appDynamicsInternalDiagnostics" : false,
+      "eumInternalError" : false,
+      "memoryLeakDiagnostics" : false,
+      "systemLog" : false,
+      "activityTrace" : false,
+      "objectContentSummary" : false,
+      "appDynamicsData" : false,
+      "azureAutoScaling" : false,
+      "agentDiagnostics" : false,
+      "memory" : false,
+      "custom" : true,
+      "applicationDiscovered" : false,
+      "tierDiscovered" : false,
+      "nodeDiscovered" : false,
+      "machineDiscovered" : false,
+      "btDiscovered" : false,
+      "serviceEndpointDiscovered" : false,
+      "backendDiscovered" : false,
+      "warRoomNote" : false,
+      "syntheticBrowserEvent" : false,
+      "syntheticAvailabilityHealthy" : false,
+      "syntheticAvailabilityWarning" : false,
+      "syntheticAvailabilityConfirmedWarning" : false,
+      "syntheticAvailabilityOngoingWarning" : false,
+      "syntheticAvailabilityError" : false,
+      "syntheticAvailabilityConfirmedError" : false,
+      "syntheticAvailabilityOngoingError" : false,
+      "maxRows" : 0,
+      "errorIDs" : null,
+      "needProps" : false,
+      "firstInChain" : false,
+      "fetchAllEventTypes" : false,
+      "guid" : null
+    } ],
+    "entityFilters" : [ "[Lcom.singularity.ee.controller.api.dto.policies.APolicyAffectedEntityMatchCriteria;", [ ] ],
+    "enabled" : true,
+    "batchActionsPerMinute" : true,
+    "actionWrappers" : [ "[Lcom.singularity.ee.controller.api.dto.ActionExecutionWrapper;", [ [ "com.singularity.ee.controller.api.dto.ActionExecutionWrapper", {
+      "id" : 3,
+      "version" : 1,
+      "actionId" : 1,
+      "type" : null,
+      "value" : 0,
+      "notes" : "Warning. Warning. Warning. ",
+      "entityDefinitions" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ]
+    } ] ] ],
+    "type" : "IMMEDIATE",
+    "durationInMins" : 1
+  } ] ] ],
+  "metatdata" : [ "java.util.ArrayList", [ [ "[Lcom.singularity.ee.controller.api.dto.Action;", [ [ "com.singularity.ee.controller.api.dto.EmailAction", {
+    "id" : 1,
+    "version" : 0,
+    "name" : "A8D768A3-F039-1F69-FE31-28AD2A82FAB4",
+    "applicationId" : 7,
+    "priority" : 1,
+    "description" : null,
+    "timeZone" : null,
+    "toAddress" : "derrek.young@appdynamics.com",
+    "subject" : ""
+  } ] ] ], [ "[Lcom.singularity.ee.controller.api.dto.policies.PolicyTemplate;", [ [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 9,
+    "version" : 0,
+    "name" : "Business Transaction response time is much higher than normal",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.BTAffectedEntityMatchCriteria", {
+      "id" : 9,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "ALL",
+      "componentIds" : [ ],
+      "businessTransactionIds" : [ ],
+      "nameMatch" : null
+    } ],
+    "type" : "BUSINESS_TRANSACTION",
+    "description" : "Average Response Time (ms) is > 2 : 3 standard deviation of the default baseline and CALLS_PER_MINUTE is > 50 per minute for the last 30 minutes",
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 17,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+        "id" : 29,
+        "version" : 0,
+        "operator" : "AND",
+        "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 30,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Average Response Time (ms)",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 3.0,
+          "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+          "useActiveBaseline" : true,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Average Response Time (ms) Baseline Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ],
+        "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 31,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Calls per Minute",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 50.0,
+          "valueUnitType" : "ABSOLUTE",
+          "useActiveBaseline" : false,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Calls per Minute Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 18,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+        "id" : 32,
+        "version" : 0,
+        "operator" : "AND",
+        "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 33,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Average Response Time (ms)",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 2.0,
+          "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+          "useActiveBaseline" : true,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Average Response Time (ms) Baseline Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ],
+        "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 34,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Calls per Minute",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 100.0,
+          "valueUnitType" : "ABSOLUTE",
+          "useActiveBaseline" : false,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Calls per Minute Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 10,
+    "version" : 0,
+    "name" : "Business Transaction error rate is much higher than normal",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.BTAffectedEntityMatchCriteria", {
+      "id" : 10,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "ALL",
+      "componentIds" : [ ],
+      "businessTransactionIds" : [ ],
+      "nameMatch" : null
+    } ],
+    "type" : "BUSINESS_TRANSACTION",
+    "description" : "Errors per Minute is > 2 : 3 standard deviation of the default baseline and Errors per Minute is > 10 per minute and CALLS_PER_MINUTE is > 50 per minute for the last 30 minutes",
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 19,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+        "id" : 35,
+        "version" : 0,
+        "operator" : "AND",
+        "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 36,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Errors per Minute",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 3.0,
+          "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+          "useActiveBaseline" : true,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Errors per Minute Baseline Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ],
+        "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+          "id" : 37,
+          "version" : 0,
+          "operator" : "AND",
+          "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+            "id" : 38,
+            "version" : 0,
+            "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+              "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+                "type" : "LOGICAL_METRIC",
+                "logicalMetricName" : "Errors per Minute",
+                "scope" : null,
+                "metricId" : 0
+              } ],
+              "functionType" : "SUM",
+              "displayName" : "null",
+              "literalValue" : 0,
+              "literalValueExpression" : false,
+              "value" : 0
+            } ],
+            "operator" : "GREATER_THAN",
+            "value" : 10.0,
+            "valueUnitType" : "ABSOLUTE",
+            "useActiveBaseline" : false,
+            "baselineId" : 0,
+            "conditionExpression" : null,
+            "conditionDisplayName" : "Errors per Minute Condition",
+            "conditionValueFunction" : null,
+            "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+            "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+          } ],
+          "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+            "id" : 39,
+            "version" : 0,
+            "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+              "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+                "type" : "LOGICAL_METRIC",
+                "logicalMetricName" : "Calls per Minute",
+                "scope" : null,
+                "metricId" : 0
+              } ],
+              "functionType" : "VALUE",
+              "displayName" : "null",
+              "literalValue" : 0,
+              "literalValueExpression" : false,
+              "value" : 0
+            } ],
+            "operator" : "GREATER_THAN",
+            "value" : 50.0,
+            "valueUnitType" : "ABSOLUTE",
+            "useActiveBaseline" : false,
+            "baselineId" : 0,
+            "conditionExpression" : null,
+            "conditionDisplayName" : "Calls per Minute Condition",
+            "conditionValueFunction" : null,
+            "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+            "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+          } ]
+        } ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 20,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+        "id" : 40,
+        "version" : 0,
+        "operator" : "AND",
+        "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+          "id" : 41,
+          "version" : 0,
+          "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+            "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+              "type" : "LOGICAL_METRIC",
+              "logicalMetricName" : "Errors per Minute",
+              "scope" : null,
+              "metricId" : 0
+            } ],
+            "functionType" : "VALUE",
+            "displayName" : "null",
+            "literalValue" : 0,
+            "literalValueExpression" : false,
+            "value" : 0
+          } ],
+          "operator" : "GREATER_THAN",
+          "value" : 2.0,
+          "valueUnitType" : "BASELINE_STANDARD_DEVIATION",
+          "useActiveBaseline" : true,
+          "baselineId" : 0,
+          "conditionExpression" : null,
+          "conditionDisplayName" : "Errors per Minute Baseline Condition",
+          "conditionValueFunction" : null,
+          "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+          "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+        } ],
+        "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyBooleanCondition", {
+          "id" : 42,
+          "version" : 0,
+          "operator" : "AND",
+          "condition1" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+            "id" : 43,
+            "version" : 0,
+            "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+              "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+                "type" : "LOGICAL_METRIC",
+                "logicalMetricName" : "Errors per Minute",
+                "scope" : null,
+                "metricId" : 0
+              } ],
+              "functionType" : "SUM",
+              "displayName" : "null",
+              "literalValue" : 0,
+              "literalValueExpression" : false,
+              "value" : 0
+            } ],
+            "operator" : "GREATER_THAN",
+            "value" : 5.0,
+            "valueUnitType" : "ABSOLUTE",
+            "useActiveBaseline" : false,
+            "baselineId" : 0,
+            "conditionExpression" : null,
+            "conditionDisplayName" : "Errors per Minute Condition",
+            "conditionValueFunction" : null,
+            "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+            "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+          } ],
+          "condition2" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+            "id" : 44,
+            "version" : 0,
+            "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+              "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+                "type" : "LOGICAL_METRIC",
+                "logicalMetricName" : "Calls per Minute",
+                "scope" : null,
+                "metricId" : 0
+              } ],
+              "functionType" : "VALUE",
+              "displayName" : "null",
+              "literalValue" : 0,
+              "literalValueExpression" : false,
+              "value" : 0
+            } ],
+            "operator" : "GREATER_THAN",
+            "value" : 50.0,
+            "valueUnitType" : "ABSOLUTE",
+            "useActiveBaseline" : false,
+            "baselineId" : 0,
+            "conditionExpression" : null,
+            "conditionDisplayName" : "Calls per Minute Condition",
+            "conditionValueFunction" : null,
+            "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+            "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+          } ]
+        } ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 11,
+    "version" : 0,
+    "name" : "CPU utilization is too high",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.InfrastructureAffectedEntityMatchCriteria", {
+      "id" : 11,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "NODES",
+      "componentIds" : [ ],
+      "nodeMatchCriteria" : [ "com.singularity.ee.controller.api.dto.policies.NodeMatchCriteria", {
+        "id" : 7,
+        "version" : 0,
+        "nodeIds" : null,
+        "componentIds" : null,
+        "nodeNameMatchCriteria" : null,
+        "nodeMetaInfoMatchCritera" : null,
+        "latestVmSystemProperties" : null,
+        "latestEnvironmentVariables" : null,
+        "type" : "ANY",
+        "nodeTypes" : null
+      } ]
+    } ],
+    "type" : "INFRASTRUCTURE",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 21,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 45,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "Hardware Resources|CPU|%Busy",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 90.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "Hardware Resources|CPU|%Busy Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 22,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 46,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "Hardware Resources|CPU|%Busy",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 75.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "Hardware Resources|CPU|%Busy Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 12,
+    "version" : 0,
+    "name" : "Memory utilization is too high",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.InfrastructureAffectedEntityMatchCriteria", {
+      "id" : 12,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "NODES",
+      "componentIds" : [ ],
+      "nodeMatchCriteria" : [ "com.singularity.ee.controller.api.dto.policies.NodeMatchCriteria", {
+        "id" : 8,
+        "version" : 0,
+        "nodeIds" : null,
+        "componentIds" : null,
+        "nodeNameMatchCriteria" : null,
+        "nodeMetaInfoMatchCritera" : null,
+        "latestVmSystemProperties" : null,
+        "latestEnvironmentVariables" : null,
+        "type" : "ANY",
+        "nodeTypes" : null
+      } ]
+    } ],
+    "type" : "INFRASTRUCTURE",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 23,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 47,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "Hardware Resources|Memory|Used %",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 90.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "Hardware Resources|Memory|Used % Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 24,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 48,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "Hardware Resources|Memory|Used %",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 75.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "Hardware Resources|Memory|Used % Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 13,
+    "version" : 0,
+    "name" : "JVM Heap utilization is too high",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.InfrastructureAffectedEntityMatchCriteria", {
+      "id" : 13,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "NODES",
+      "componentIds" : [ ],
+      "nodeMatchCriteria" : [ "com.singularity.ee.controller.api.dto.policies.NodeMatchCriteria", {
+        "id" : 9,
+        "version" : 0,
+        "nodeIds" : null,
+        "componentIds" : null,
+        "nodeNameMatchCriteria" : null,
+        "nodeMetaInfoMatchCritera" : null,
+        "latestVmSystemProperties" : null,
+        "latestEnvironmentVariables" : null,
+        "type" : "ANY",
+        "nodeTypes" : [ "APP_AGENT" ]
+      } ]
+    } ],
+    "type" : "INFRASTRUCTURE",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 25,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 49,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "JVM|Memory:Heap|Used %",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 90.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "JVM|Memory:Heap|Used % Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 26,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 50,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "JVM|Memory:Heap|Used %",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 75.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "JVM|Memory:Heap|Used % Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 14,
+    "version" : 0,
+    "name" : "JVM Garbage Collection Time is too high",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.InfrastructureAffectedEntityMatchCriteria", {
+      "id" : 14,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "NODES",
+      "componentIds" : [ ],
+      "nodeMatchCriteria" : [ "com.singularity.ee.controller.api.dto.policies.NodeMatchCriteria", {
+        "id" : 10,
+        "version" : 0,
+        "nodeIds" : null,
+        "componentIds" : null,
+        "nodeNameMatchCriteria" : null,
+        "nodeMetaInfoMatchCritera" : null,
+        "latestVmSystemProperties" : null,
+        "latestEnvironmentVariables" : null,
+        "type" : "ANY",
+        "nodeTypes" : [ "APP_AGENT" ]
+      } ]
+    } ],
+    "type" : "INFRASTRUCTURE",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 27,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 51,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "JVM|Garbage Collection|GC Time Spent Per Min (ms)",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 45000.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "JVM|Garbage Collection|GC Time Spent Per Min (ms) Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 28,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 52,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "JVM|Garbage Collection|GC Time Spent Per Min (ms)",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 30000.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "JVM|Garbage Collection|GC Time Spent Per Min (ms) Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ], [ "com.singularity.ee.controller.api.dto.policies.PolicyTemplate", {
+    "id" : 15,
+    "version" : 0,
+    "name" : "CLR Garbage Collection Time is too high",
+    "applicationId" : 7,
+    "affectedEntityDefinitionRule" : [ "com.singularity.ee.controller.api.dto.policies.InfrastructureAffectedEntityMatchCriteria", {
+      "id" : 15,
+      "version" : 0,
+      "missingEntities" : null,
+      "type" : "NODES",
+      "componentIds" : [ ],
+      "nodeMatchCriteria" : [ "com.singularity.ee.controller.api.dto.policies.NodeMatchCriteria", {
+        "id" : 11,
+        "version" : 0,
+        "nodeIds" : null,
+        "componentIds" : null,
+        "nodeNameMatchCriteria" : null,
+        "nodeMetaInfoMatchCritera" : null,
+        "latestVmSystemProperties" : null,
+        "latestEnvironmentVariables" : null,
+        "type" : "ANY",
+        "nodeTypes" : [ "DOT_NET_APP_AGENT" ]
+      } ]
+    } ],
+    "type" : "INFRASTRUCTURE",
+    "description" : null,
+    "enabled" : true,
+    "critical" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 29,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 53,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "CLR|Garbage Collection|GC Time Spent (%)",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 75.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "CLR|Garbage Collection|GC Time Spent (%) Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "warning" : [ "com.singularity.ee.controller.api.dto.policies.PolicyExecutionCriteria", {
+      "id" : 30,
+      "version" : 0,
+      "condition" : [ "com.singularity.ee.controller.api.dto.policies.PolicyLeafCondition", {
+        "id" : 54,
+        "version" : 0,
+        "metricExpression" : [ "com.singularity.ee.controller.api.dto.policies.LeafMetricExpression", {
+          "metricDefinition" : [ "com.singularity.ee.controller.api.dto.policies.AbstractMetricDefinition", {
+            "type" : "LOGICAL_METRIC",
+            "logicalMetricName" : "CLR|Garbage Collection|GC Time Spent (%)",
+            "scope" : null,
+            "metricId" : 0
+          } ],
+          "functionType" : "VALUE",
+          "displayName" : "null",
+          "literalValue" : 0,
+          "literalValueExpression" : false,
+          "value" : 0
+        } ],
+        "operator" : "GREATER_THAN",
+        "value" : 50.0,
+        "valueUnitType" : "ABSOLUTE",
+        "useActiveBaseline" : false,
+        "baselineId" : 0,
+        "conditionExpression" : null,
+        "conditionDisplayName" : "CLR|Garbage Collection|GC Time Spent (%) Condition",
+        "conditionValueFunction" : null,
+        "entityDefs" : [ "[Lcom.singularity.ee.controller.api.dto.EntityDefinition;", [ ] ],
+        "metrics" : [ "[Lcom.singularity.ee.controller.api.dto.Metric;", [ ] ]
+      } ],
+      "entityAggregationScope" : [ "com.singularity.ee.controller.api.dto.policies.EntityAggregationScope", {
+        "type" : "AGGREGATE",
+        "value" : 0
+      } ]
+    } ],
+    "durationInMinutes" : 30,
+    "waitTimeInMinutes" : 30,
+    "schedule" : 0,
+    "alwaysEnabled" : true,
+    "defaultPolicy" : true
+  } ] ] ], [ "[Lcom.singularity.ee.controller.api.dto.MetricBaseline;", [ [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 17,
+    "version" : 0,
+    "name" : "All data - Last 15 days",
+    "applicationId" : 7,
+    "seasonality" : "NONE",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 15,
+    "defaultBaseline" : false
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 20,
+    "version" : 1,
+    "name" : "Daily Trend - Last 30 days",
+    "applicationId" : 7,
+    "seasonality" : "DAILY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 30,
+    "defaultBaseline" : true
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 22,
+    "version" : 0,
+    "name" : "Monthly Trend - Last 1 year",
+    "applicationId" : 7,
+    "seasonality" : "MONTHLY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 365,
+    "defaultBaseline" : false
+  } ], [ "com.singularity.ee.controller.api.dto.MetricBaseline", {
+    "id" : 21,
+    "version" : 0,
+    "name" : "Weekly Trend - Last 3 months",
+    "applicationId" : 7,
+    "seasonality" : "WEEKLY",
+    "fixed" : false,
+    "fixedStartTime" : null,
+    "fixedEndTime" : null,
+    "allData" : false,
+    "numberOfDays" : 90,
+    "defaultBaseline" : false
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.Tier;", [ [ "com.appdynamics.tools.domain.Tier", {
+    "id" : 8,
+    "version" : 0,
+    "name" : "2ndTier",
+    "applicationId" : 7,
+    "type" : "Application Server",
+    "agentType" : "APP_AGENT",
+    "numberOfNodes" : 1,
+    "application" : null,
+    "nodes" : null
+  } ], [ "com.appdynamics.tools.domain.Tier", {
+    "id" : 9,
+    "version" : 0,
+    "name" : "3dTier",
+    "applicationId" : 7,
+    "type" : "Application Server",
+    "agentType" : "APP_AGENT",
+    "numberOfNodes" : 1,
+    "application" : null,
+    "nodes" : null
+  } ], [ "com.appdynamics.tools.domain.Tier", {
+    "id" : 10,
+    "version" : 0,
+    "name" : "1stTier",
+    "applicationId" : 7,
+    "type" : "Application Server",
+    "agentType" : "APP_AGENT",
+    "numberOfNodes" : 1,
+    "application" : null,
+    "nodes" : null
+  } ], [ "com.appdynamics.tools.domain.Tier", {
+    "id" : 12,
+    "version" : 0,
+    "name" : "Infinirunner",
+    "applicationId" : 7,
+    "type" : "Application Server",
+    "agentType" : "APP_AGENT",
+    "numberOfNodes" : 1,
+    "application" : null,
+    "nodes" : null
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.Node;", [ [ "com.appdynamics.tools.domain.Node", {
+    "id" : 12,
+    "version" : 0,
+    "name" : "3dTierNode1",
+    "type" : "Other",
+    "tierId" : 9,
+    "tierName" : "3dTier",
+    "appAgentVersion" : "Server Agent v4.1.0.1 GA #2015-06-24_13-35-02 rc911fe7a18ec7deaa10f2334c6a68a0bbbb2a6ce 28-4.1.0.next-build"
+  } ], [ "com.appdynamics.tools.domain.Node", {
+    "id" : 14,
+    "version" : 0,
+    "name" : "1stTierNode1",
+    "type" : "Other",
+    "tierId" : 10,
+    "tierName" : "1stTier",
+    "appAgentVersion" : "Server Agent v4.1.0.1 GA #2015-06-24_13-35-02 rc911fe7a18ec7deaa10f2334c6a68a0bbbb2a6ce 28-4.1.0.next-build"
+  } ], [ "com.appdynamics.tools.domain.Node", {
+    "id" : 15,
+    "version" : 0,
+    "name" : "2ndTierNode1",
+    "type" : "Other",
+    "tierId" : 8,
+    "tierName" : "2ndTier",
+    "appAgentVersion" : "Server Agent v4.1.0.1 GA #2015-06-24_13-35-02 rc911fe7a18ec7deaa10f2334c6a68a0bbbb2a6ce 28-4.1.0.next-build"
+  } ], [ "com.appdynamics.tools.domain.Node", {
+    "id" : 17,
+    "version" : 0,
+    "name" : "node1",
+    "type" : "Other",
+    "tierId" : 12,
+    "tierName" : "Infinirunner",
+    "appAgentVersion" : "Server Agent v4.1.1.0 GA #2015-07-17_10-33-13 rf801582fa85475ca4ca99d8dcd10b3364b80093f 28-4.1.1.next-build"
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.BusinessTransaction;", [ [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 154,
+    "version" : 0,
+    "name" : "/product/indoor",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/product/indoor",
+    "tierId" : "10",
+    "tierName" : "1stTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 155,
+    "version" : 0,
+    "name" : "/processorder/electronics",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/processorder/electronics",
+    "tierId" : "10",
+    "tierName" : "1stTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 156,
+    "version" : 0,
+    "name" : "/product/outdoor",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/product/outdoor",
+    "tierId" : "10",
+    "tierName" : "1stTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 157,
+    "version" : 0,
+    "name" : "/product/furniture",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/product/furniture",
+    "tierId" : "10",
+    "tierName" : "1stTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 158,
+    "version" : 0,
+    "name" : "/quoterequest",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/quoterequest",
+    "tierId" : "10",
+    "tierName" : "1stTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 159,
+    "version" : 0,
+    "name" : "/http/to2nd",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/http/to2nd",
+    "tierId" : "8",
+    "tierName" : "2ndTier",
+    "background" : "false"
+  } ], [ "com.appdynamics.tools.domain.BusinessTransaction", {
+    "id" : 160,
+    "version" : 0,
+    "name" : "/http/to3d",
+    "entryPointType" : "SERVLET",
+    "internalName" : "/http/to3d",
+    "tierId" : "9",
+    "tierName" : "3dTier",
+    "background" : "false"
+  } ] ] ], [ "[Lcom.appdynamics.tools.domain.Backend;", [ [ "com.appdynamics.tools.domain.Backend", {
+    "id" : 15,
+    "version" : 0,
+    "name" : "EHCache Get",
+    "exitPointType" : "CUSTOM",
+    "properties" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "NAME",
+      "value" : "EHCache Get"
+    } ] ] ]
+  } ], [ "com.appdynamics.tools.domain.Backend", {
+    "id" : 6,
+    "version" : 0,
+    "name" : "MYSQL-AppDynamics-LOCALHOST",
+    "exitPointType" : "JDBC",
+    "properties" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "HOST",
+      "value" : "LOCALHOST"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "MAJOR_VERSION",
+      "value" : "1.0"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "PORT",
+      "value" : "3306"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "SCHEMA",
+      "value" : "MYSQL"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "URL",
+      "value" : "jdbc:mysql://localhost:3306/mysql"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "VENDOR",
+      "value" : "AppDynamics"
+    } ] ] ]
+  } ], [ "com.appdynamics.tools.domain.Backend", {
+    "id" : 5,
+    "version" : 0,
+    "name" : "NEWSCHEMA-MYSQL-LOCALHOST",
+    "exitPointType" : "JDBC",
+    "properties" : [ "java.util.ArrayList", [ [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "HOST",
+      "value" : "LOCALHOST"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "MAJOR_VERSION",
+      "value" : "5.6"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "PORT",
+      "value" : "3308"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "SCHEMA",
+      "value" : "NEWSCHEMA"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "URL",
+      "value" : "jdbc:mysql://localhost:3308/newschema"
+    } ], [ "com.appdynamics.tools.domain.Backend$NameValue", {
+      "id" : 0,
+      "name" : "VENDOR",
+      "value" : "MYSQL"
+    } ] ] ]
+  } ] ] ] ] ]
+}
