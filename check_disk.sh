@@ -110,9 +110,9 @@ function main {
   while [ 1 ]; do
     if [ $(( $minute % $MINUTE_FREQUENCY )) -eq 0 ]; then
       if [ "$EXCLUDE_LIST" != "" ] ; then
-        df -H | grep -vE "^Filesystem|tmpfs|cdrom|${EXCLUDE_LIST}" | check_disk_used
+        df -PH | grep -vE "^Filesystem|tmpfs|cdrom|${EXCLUDE_LIST}" | check_disk_used
       else
-        df -H | grep -vE "^Filesystem|tmpfs|cdrom" | check_disk_used
+        df -PH | grep -vE "^Filesystem|tmpfs|cdrom" | check_disk_used
       fi
     fi
     sleep 60
