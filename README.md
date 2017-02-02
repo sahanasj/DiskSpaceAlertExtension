@@ -1,7 +1,7 @@
 # Summary
 An AppDynamics Machine Agent extension to alert if disk space crosses a warning or critical threshold. If a threshold is crossed, the extension will create a custom event upon which you can trigger a Policy + Action to get notified.
 
-I tested on CentOS 7 and Ubuntu 12,14. No support for Windows yet, but that's coming.
+I tested on CentOS 7 and Ubuntu 12,14. The Windows port requires Powershell 3.0 (if you desperately want it ported to PS 2.0, I can do that for you)
 
 # Configuration
 `check_disk.cfg` contains the settings for the Warning and Critical thresholds as well as the Controller connection information.
@@ -26,7 +26,9 @@ You'll want to test and validate that the extension is working so make sure to g
 Copy the runtime files to the `<MACHINE_AGENT_HOME>/monitors/` directory. Your final deployment should look something like `<MACHINE_AGENT_HOME>/monitors/DiskSpaceAlertExtension/`
 
 ## Run Manually
-`./check_disk.sh`
+`./check_disk.sh` (*nix)
+`./check_disk.bat` (Windows)
+
 
 # Resources
 https://docs.appdynamics.com/display/PRO41/Extensions+and+Custom+Metrics

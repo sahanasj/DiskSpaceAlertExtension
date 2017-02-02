@@ -1,0 +1,1 @@
+powershell.exe ./check_disk.ps1
