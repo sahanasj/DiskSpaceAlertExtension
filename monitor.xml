@@ -13,11 +13,10 @@
         </task-arguments>
         <executable-task>
             <type>file</type>
+            <!-- For Linux, uncomment the line below -->
             <file os-type="linux">check_disk.sh</file>
-            <!--
-            We'll eventually want this for Windows too.
-            <file os-type="windows">disk_space.bat</file>
-            -->
+            <!-- For Windows, uncomment the line below -->
+            <!-- <file os-type="windows">check_disk.bat</file> -->
         </executable-task>
     </monitor-run-task>
 </monitor>
